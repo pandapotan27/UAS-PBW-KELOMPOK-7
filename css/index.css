@@ -1,0 +1,328 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#ffffff;
+    --text-color:#008000;
+    --second-color:#323232;
+    --main-coloer:#000000;
+    --big-font: 3.8rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth; /* Menambahkan animasi saat menggulir */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Mengatur jarak dari atas */
+}
+
+.btn-mulai {
+    background-color: var(--text-color); /* Warna latar belakang tombol */
+    color: var(--bg-color); /* Warna teks tombol */
+    border: none;
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 16px; /* Ukuran font tombol */
+    font-weight: 700;
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right: 120px; /* Atur posisi tombol ke kanan */
+}
+
+
+.btn-mulai:hover {
+    background-color: var(--second-color); /* Warna latar belakang tombol saat dihover */
+}
+section {
+    padding: 80px 13%;
+    transition: opacity 0.5s ease; /* Tambahkan efek transisi opacity */
+    opacity: 1; /* Atur opacity awal */
+}
+
+
+/* style beranda */
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+.home-text h2{
+    font-size: var(--big-font);
+    margin: 150px 0 10px;
+}
+.home-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin-bottom: 48px;
+    margin-right: 600px;
+    text-align: justify;
+}
+.button-container{
+    margin-right: 760px;
+    color: #008000;
+}
+.home-img img {
+    margin: 0px 600px 50px; /* Ubah margin untuk memusatkan gambar */
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-270px);
+    transition: transform 0.3s ease; /* Tambahkan efek transisi untuk transformasi */
+}
+
+.home-img img:hover {
+    transform: translateY(-360px); /* Ubah transformasi saat gambar dihover */
+}
+
+
+/* style tentang */
+.tentang {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #323232;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    
+}
+.tentang-text h5{
+    font-size: var(--big-font);
+    /* text-align: right; */
+    margin: 120px 0 10px;
+    color: var(--bg-color);
+}
+.tentang-text p{
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    text-align: justify;
+}
+.gambar-container img {
+    width: 10cm;
+    height: 5cm;
+    max-width: 100%; /* Memastikan gambar tidak melebihi lebar parent */
+    height: auto; /* Mempertahankan proporsi asli gambar */
+    transform: translateY(150px); /* Awalnya posisi normal */
+    transition: transform 0.3s ease; /* Animasi perubahan transformasi */
+    float: right;
+}
+
+.gambar-container img:hover {
+    transform: translateY(200px); /* Transformasi saat dihover */
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column; /* Tampilkan elemen secara vertikal */
+    justify-content: center; /* Untuk membuat judul berada di tengah */
+    align-items: center; /* Untuk membuat elemen berada di tengah secara horizontal */
+    background-color: #008000;
+    height: 100vh;
+  }
+  
+  .contact h2 {
+    margin-bottom: 20px; /* Jarak antara judul dan peta */
+    color: #fff;
+  }
+  
+  .contact-info {
+    width: 100%;
+    max-width: 1000px; /* Ukuran maksimum konten */
+    text-align: center; /* Untuk membuat teks berada di tengah */
+    margin-top: -50px; /* Jarak antara peta dan kartu */
+  }
+  
+  .map {
+    width: 100%; /* Menyesuaikan lebar peta */
+    max-width: 1400px; /* Ukuran maksimum peta */
+    margin: 0 auto; /* Untuk mengatur peta ke tengah */
+    margin-top: 30px
+  }
+  
+  .map iframe {
+    width: 100%; /* Penuhi lebar area peta */
+    height: 350px; /* Set tinggi peta dua kali lipat dari tinggi aslinya */
+  }
+  
+  
+  
+
+/* footer */
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #323232;
+    height: auto;
+    width: 100%;
+    padding-top: 5px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid #000000;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: var(--text-color);
+}
+
+.footer-bottom{
+    background: var(--main-coloer);
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+    float: center;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:var(--text-color);
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: var(--text-color);
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+/* Tambahkan media queries untuk responsif */
+
+/* Tablet dan perangkat dengan lebar layar <= 768px */
+@media (max-width: 768px) {
+    :root {
+        --big-font: 2.8rem; /* Mengurangi ukuran font */
+        --h2-font: 2.2rem; /* Mengurangi ukuran font */
+        --p-font: 1rem; /* Mengurangi ukuran font */
+    }
+
+    .home-text p {
+        margin-right: 0; /* Menghapus margin kanan */
+    }
+
+    .button-container {
+        margin-right: 0; /* Menghapus margin kanan */
+    }
+
+    .home-img img {
+        margin: 0 auto 50px; /* Pusatkan gambar */
+        transform: translateY(0); /* Reset transform */
+    }
+}
+
+/* Smartphone dan perangkat dengan lebar layar <= 576px */
+@media (max-width: 576px) {
+    :root {
+        --big-font: 2.2rem; /* Mengurangi ukuran font */
+        --h2-font: 1.8rem; /* Mengurangi ukuran font */
+        --p-font: 0.9rem; /* Mengurangi ukuran font */
+    }
+
+    .home-text h2 {
+        margin: 100px 0 10px; /* Sesuaikan margin */
+    }
+
+    .tentang-text h5 {
+        margin: 100px 0 10px; /* Sesuaikan margin */
+    }
+
+    .kontak h2 {
+        margin: 100px 0 10px; /* Sesuaikan margin */
+    }
+
+    .button-container {
+        margin-right: 0; /* Menghapus margin kanan */
+    }
+
+    .home-img img {
+        margin: 0 auto 50px; /* Pusatkan gambar */
+        transform: translateY(0); /* Reset transform */
+    }
+}

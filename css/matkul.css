@@ -1,0 +1,76 @@
+/* Custom CSS */
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Centering text */
+.centered {
+    text-align: center;
+}
+.text-center {
+    text-align: center;
+    color: #323232;
+}
+/* CSS untuk kirim tugas */
+.card-custom {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-custom .card-body {
+    text-align: center;
+}
+
+.card-custom .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-custom .card-text {
+    color: #666;
+}
+
+.card-custom .btn-primary {
+    background-color: #008000;
+    border-color: #008000;
+    padding: 8px 20px;
+    font-size: 1em;
+}
+
+.card-custom .btn-primary:hover {
+    background-color: #323232;
+    border-color: #323232;
+}

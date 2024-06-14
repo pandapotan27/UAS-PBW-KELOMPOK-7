@@ -1,0 +1,81 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 700;
+    color: #323232;
+}
+h1{
+    color: #323232;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    color: #323232;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    margin-top: 50px;
+}
+
+.custom-card {
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #323232; /* Warna judul yang menarik */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.card-body {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Efek transparansi pada latar belakang */
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-button {
+    width: 50%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card-button:hover {
+    background-color: #323232;
+    border-color: #323232;
+    opacity: 1; /* Opacity saat dihover */
+}
+
+.card-button:focus {
+    outline: none;
+}
+.h1{
+    color: #323232;
+}
